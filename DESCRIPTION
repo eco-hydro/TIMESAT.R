@@ -14,11 +14,8 @@ RoxygenNote: 6.1.1
 Depends:
     R (>= 3.2)
 Imports: 
-    tibble, dplyr, purrr, stringr, tidyr, ggplot2, lubridate, readr,
-    data.table, 
-    grid, gridExtra, 
-    magrittr, plyr, reshape2, zoo, 
-    numDeriv, 
+    purrr, readr,
+    magrittr,
     grDevices, utils, stats
 Suggests: knitr,
     rmarkdown,

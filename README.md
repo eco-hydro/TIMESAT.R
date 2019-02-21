@@ -1,18 +1,7 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-# rTIMESAT
+rTIMESAT
+========
 
 [![Travis Build Status](https://travis-ci.org/kongdd/rTIMESAT.svg?branch=master)](https://travis-ci.org/kongdd/rTIMESAT)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/kongdd/rTIMESAT?branch=master&svg=true)](https://ci.appveyor.com/project/kongdd/rTIMESAT)
@@ -22,15 +11,17 @@ knitr::opts_chunk$set(
 
 R package: Extract Remote Sensing Vegetation Phenology by TIMESAT Fortran library.
 
-## Installation
+Installation
+------------
 
 You can install the released version of rTIMESAT from GitHub with:
-<!-- [CRAN](https://CRAN.R-project.org) with: -->
 
 ``` r
 # install.packages("rTIMESAT")
 devtools::install_github("kongdd/rTIMESAT")
 ```
 
-## Example
+Example
+-------
+
 This is a basic example which shows you how to solve a common problem:

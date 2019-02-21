@@ -175,7 +175,8 @@
 #' @export
 #' 
 #' @examples
-#' write_setting(options_TSM, 'TSM.set')
+#' opt <- rTIMESAT:::options_TSM
+#' write_setting(opt, 'TSM.set')
 write_setting <- function(options_TSM, file = "TSM.set"){
     # check about file_w    
     if(options_TSM$file_w == "") options_TSM$has_QC <- 0

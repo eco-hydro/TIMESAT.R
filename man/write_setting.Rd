@@ -179,5 +179,6 @@ any values).}
 }
 }
 \examples{
-write_setting(options_TSM, 'TSM.set')
+opt <- rTIMESAT:::options_TSM
+write_setting(opt, 'TSM.set')
 }
