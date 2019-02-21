@@ -1,0 +1,27 @@
+Package: rTIMESAT
+Type: Package
+Title: Extract Remote Sensing Vegetation Phenology by TIMESAT Fortran library
+Version: 0.1.0
+Authors@R: c(
+    person("Dongdong", "Kong", role = c("aut", "cre"), email = "kongdd.sysu@gmail.com"))
+Description: 
+    TIMESAT is a software for remote sensing time-series de-noising, reconstruction, 
+    and phenology extraction.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Depends:
+    R (>= 3.2)
+Imports: 
+    tibble, dplyr, purrr, stringr, tidyr, ggplot2, lubridate, readr,
+    data.table, 
+    grid, gridExtra, 
+    magrittr, plyr, reshape2, zoo, 
+    numDeriv, 
+    grDevices, utils, stats
+Suggests: knitr,
+    rmarkdown,
+    testthat
+URL: https://github.com/kongdd/rTIMESAT
+BugReports: https://github.com/kongdd/rTIMESAT/issues
