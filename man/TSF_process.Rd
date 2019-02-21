@@ -4,7 +4,7 @@
 \alias{TSF_process}
 \title{TSF_process}
 \usage{
-TSF_process(file_set = "", ncluster = 1)
+TSF_process(file_set, ncluster = 1)
 }
 \arguments{
 \item{file_set}{file path of TIMESAT setting file.}
@@ -13,4 +13,10 @@ TSF_process(file_set = "", ncluster = 1)
 }
 \description{
 TSF_process
+}
+\examples{
+\dontrun{
+file_set <- system.file("example/ascii/TSM.set", package = "rTIMESAT") 
+TSF_process(file_set)
+}
 }

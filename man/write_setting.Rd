@@ -4,10 +4,10 @@
 \alias{write_setting}
 \title{write_setting}
 \usage{
-write_setting(options_TSM, file = "TSM.set")
+write_setting(options, file = "TSM.set")
 }
 \arguments{
-\item{options_TSM}{List object, parameters of TIMESAT.}
+\item{options}{List object, parameters of TIMESAT.}
 
 \item{file}{A character string naming a file}
 }

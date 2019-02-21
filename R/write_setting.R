@@ -2,7 +2,7 @@
 #' 
 #' Write TIMESAT setting file.
 #' 
-#' @param options_TSM List object, parameters of TIMESAT.
+#' @param options List object, parameters of TIMESAT.
 #' @param file A character string naming a file 
 #' 
 #' @details
@@ -177,15 +177,14 @@
 #' @examples
 #' opt <- rTIMESAT:::options_TSM
 #' write_setting(opt, 'TSM.set')
-write_setting <- function(options_TSM, file = "TSM.set"){
+write_setting <- function(options, file = "TSM.set"){
     # check about file_w    
-    if(options_TSM$file_w == "") options_TSM$has_QC <- 0
+    if(options$file_w == "") options$has_QC <- 0
     
     # convert numeric into string
-    opt <- options_TSM %>% map_chr(paste, collapse = " ")
+    opt <- options %>% map_chr(paste, collapse = " ")
 
-    sep = "\t\t\t\t%"
-    str <- opt %>% paste(sep, sep = "")
+    str <- opt %>% paste(options_TSM_help, sep = "")
     write_lines(str[1:25], file)
 
     sep_lc = "************"

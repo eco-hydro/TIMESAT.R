@@ -4,9 +4,14 @@
 #' @param ncluster How many clusters to be used in parallel mode?
 #' 
 #' @export
-TSF_process <- function(file_set = "", ncluster = 1){
-    indir <- system.file(package = "rTIMESAT")
-    exe <- sprintf("%s/bin/TSF_process.exe", indir)
+#' 
+#' @examples
+#' \dontrun{
+#' file_set <- system.file("example/ascii/TSM.set", package = "rTIMESAT") 
+#' TSF_process(file_set)
+#' }
+TSF_process <- function(file_set, ncluster = 1){
+    exe <- system.file("exec/TSF_process.exe", package = "rTIMESAT")
     cmd <- sprintf("%s %s %d", exe, file_set, ncluster) 
     system(cmd)
 }
