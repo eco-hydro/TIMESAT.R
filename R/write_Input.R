@@ -2,11 +2,12 @@
 #'
 #' Write matrix into the format of TIMESAT.
 #'
-#' @param x matrix row is time, column is site.
+#' @param x matrix row is site, column is time.
 #' @param file a character string naming a file.
 #' @param nptperyear How many points per year?
 #'
 #' @importFrom utils write.table
+#' @importFrom data.table fwrite
 #' @export
 #'
 #' @examples
@@ -36,5 +37,7 @@ write_input <- function(x, file="TSM_y.txt", nptperyear=23){
     header <- sprintf("%d\t%d\t%d", nyear, nptperyear, ngrid)
 
     write_lines(header, file)
-    write.table(x[, 1:npt, drop=F], file, append = T, row.names = F, col.names = F, sep = "\t")
+    # write.table(x[, 1:npt, drop=F], file, append = T, row.names = F, col.names = F, sep = "\t")
+    suppressMessages(fwrite(x[, 1:npt, drop = F], file, append = T, 
+        row.names = F, col.names = F, sep = "\t"))
 }

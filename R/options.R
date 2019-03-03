@@ -17,7 +17,7 @@ options_TSM <- list(
     qc_3                = c(2, 3, 0.2),   # Quality range 3 and weight 
     A                   = 0.1,            # Amplitude cutoff value 
     debug               = 0,              # Debug flag (3/2/1/0) 
-    output_type         = c(1, 1, 0),     # Output files (1/0 1/0 1/0) 
+    output_type         = c(1, 1, 0),     # Output files (1/0 1/0 1/0), 1: seasonality data; 2: smoothed time-series; 3: original time-series
     has_lc              = 0,              # Use land cover (1/0) 
     file_lc             = "",             # Name of landcover file 
     spike_meth          = 1,              # Spike method (3/2/1/0) 

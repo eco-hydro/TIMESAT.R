@@ -7,7 +7,7 @@
 write_input(x, file = "TSM_y.txt", nptperyear = 23)
 }
 \arguments{
-\item{x}{matrix row is time, column is site.}
+\item{x}{matrix row is site, column is time.}
 
 \item{file}{a character string naming a file.}
 

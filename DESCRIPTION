@@ -16,6 +16,7 @@ Depends:
 Imports: 
     purrr, readr,
     magrittr,
+    data.table,
     grDevices, utils, stats
 Suggests: knitr,
     rmarkdown,

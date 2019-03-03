@@ -4,12 +4,15 @@
 \alias{TSF_process}
 \title{TSF_process}
 \usage{
-TSF_process(file_set, ncluster = 1)
+TSF_process(file_set, ncluster = 1, wait = TRUE)
 }
 \arguments{
 \item{file_set}{file path of TIMESAT setting file.}
 
 \item{ncluster}{How many clusters to be used in parallel mode?}
+
+\item{wait}{A logical (not NA) indicating whether the R interpreter should 
+wait for the command to finish, or run it asynchronously.}
 }
 \description{
 TSF_process

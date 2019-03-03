@@ -14,7 +14,7 @@
 #'    qc_2                = c(1, 1, 0.5),   # Quality range 2 and weight
 #'    qc_3                = c(2, 3, 0.2),   # Quality range 3 and weight
 #'    A                   = 0.1,            # Amplitude cutoff value
-#'    output_type         = c(1, 1, 0),     # Output files (1/0 1/0 1/0)
+#'    output_type         = c(1, 1, 0),     # Output files (1/0 1/0 1/0), 1: seasonality data; 2: smoothed time-series; 3: original time-series
 #'    seasonpar           = 1.0,            # Seasonality parameter (0-1)
 #'    iters               = 2,              # No. of envelope iterations (3/2/1)
 #'    FUN                 = 2,              # Fitting method (1/2/3): (SG/AG/DL)
