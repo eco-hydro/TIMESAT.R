@@ -22,3 +22,6 @@ Read curve fitting time-series in TIMESAT .tts binary format file to dataframe.
 file <- system.file("example/ascii/TSM_fit.tts", package = "rTIMESAT") 
 d_tts <- read_tts(file)
 }
+\seealso{
+\code{\link{TSF_fit2time}}
+}

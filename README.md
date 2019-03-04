@@ -10,6 +10,8 @@ R package: Extract Remote Sensing Vegetation Phenology by TIMESAT Fortran librar
 Installation
 ------------
 
+Note that `TSF_process.exe` and `TSF_fit2time` should be added to system environment path.
+
 You can install the released version of rTIMESAT from GitHub with: <!-- [CRAN](https://CRAN.R-project.org) with: -->
 
 ``` r

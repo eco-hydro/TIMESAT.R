@@ -11,6 +11,9 @@
 #' 
 #' @export
 #' 
+#' @seealso
+#' \code{\link{TSF_fit2time}}
+#'
 #' @examples
 #' file <- system.file("example/ascii/TSM_fit.tts", package = "rTIMESAT") 
 #' d_tts <- read_tts(file)
