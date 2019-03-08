@@ -18,6 +18,10 @@ TSF_fit2time(infile, row_start = 1, row_end = Inf, col_start = 1,
 
 \item{col_end}{Last col in processing window}
 
+\item{outdir}{Output directory.}
+
+\item{outfile}{file name of output.}
+
 \item{wait}{A logical (not NA) indicating whether the R interpreter should
 wait for the command to finish, or run it asynchronously.}
 }

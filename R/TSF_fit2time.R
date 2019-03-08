@@ -8,12 +8,15 @@
 #' @param row_end Last row in processing window
 #' @param col_start First col in processing window
 #' @param col_end Last col in processing window
+#' @param outdir Output directory.
+#' @param outfile file name of output.
 #' @param wait A logical (not NA) indicating whether the R interpreter should
 #' wait for the command to finish, or run it asynchronously.
-#'
+#' 
 #' @seealso
 #' \code{\link{read_tts}}
-#'
+#' 
+#' @export
 #' @examples
 #' \dontrun{
 #' TSF_fit2time(file, 1, 1e8, 1, 1, outdir = "TSF", wait = F)

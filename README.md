@@ -3,7 +3,12 @@
 rTIMESAT
 ========
 
-[![Travis Build Status](https://travis-ci.org/kongdd/rTIMESAT.svg?branch=master)](https://travis-ci.org/kongdd/rTIMESAT) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/kongdd/rTIMESAT?branch=master&svg=true)](https://ci.appveyor.com/project/kongdd/rTIMESAT) [![codecov](https://codecov.io/gh/kongdd/rTIMESAT/branch/master/graph/badge.svg)](https://codecov.io/gh/kongdd/rTIMESAT) [![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) [![CRAN](http://www.r-pkg.org/badges/version/rTIMESAT)](https://cran.r-project.org/package=rTIMESAT)
+[![Travis Build Status](https://travis-ci.org/kongdd/rTIMESAT.svg?branch=master)](https://travis-ci.org/kongdd/rTIMESAT) 
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/kongdd/rTIMESAT?branch=master&svg=true)](https://ci.appveyor.com/project/kongdd/rTIMESAT)
+[![codecov](https://codecov.io/gh/kongdd/rTIMESAT/branch/master/graph/badge.svg)](https://codecov.io/gh/kongdd/rTIMESAT)
+[![License](http://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html) 
+[![CRAN](http://www.r-pkg.org/badges/version/rTIMESAT)](https://cran.r-project.org/package=rTIMESAT)
+[![DOI](https://zenodo.org/badge/171882895.svg)](https://zenodo.org/badge/latestdoi/171882895)
 
 R package: Extract Remote Sensing Vegetation Phenology by TIMESAT Fortran library.
 
