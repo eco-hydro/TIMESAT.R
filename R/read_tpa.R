@@ -66,13 +66,19 @@ read_tpa <- function(file) {
 
     # Read the data and save it in the tpa_data matrix
     lst <- map(1:n_pixels, function(i){
-        info <- offset_readBin(raw_vec, integer(), n=3, size=4)
+        info <- offset_readBin(raw_vec, integer(), n=3, size=4) 
+        # If failed to extract phenology matrix: (fixed 20190316)
+        # info <- c(0, 0, 0)
         nseason <- info[3]
-        data <- offset_readBin(raw_vec, numeric(), n=(ncol-3)*nseason, size=4) %>% 
-            matrix(nrow = nseason, byrow = T) %>% 
-            cbind(info[1], info[2], 1:nseason, .)
+        if (nseason > 0) {
+            data <- offset_readBin(raw_vec, numeric(), n=(ncol-3)*nseason, size=4) %>% 
+                matrix(nrow = nseason, byrow = T) %>% 
+                cbind(info[1], info[2], 1:nseason, .)
+        } else {
+            data <- NULL
+        }
         return(data)
-    }) 
+    })
     df <- do.call(rbind.data.frame, lst) %>% set_colnames(Colnames)
     df <- df[, Colnames_adj]
     return(df)

@@ -61,7 +61,7 @@ TSF_main <- function(d, nptperyear = 23, cache = T){
        iters               = 2,              # No. of envelope iterations (3/2/1)
        FUN                 = 2,              # Fitting method (1/2/3): (SG/AG/DL)
        half_win            = 7,              # half Window size for Sav-Gol.
-       meth_pheno          = 1,              # Season start / end method (4/3/2/1)
+       meth_pheno          = 1,              # (1: seasonal amplitude, 2: absolute value, 3: relative amplitude, 4: STL trend)
        trs                 = c(0.5, 0.5)     # Season start / end values
     )
 

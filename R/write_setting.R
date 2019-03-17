@@ -63,7 +63,7 @@
 #' }}
 #' 
 #' \item{output_type}{(1/0 1/0 1/0), "1" means return, "0" means not.
-#' First, seasonality data; Second, smoothed time-series; Third, original time-series.}
+#' 1: seasonality data, 2: smoothed time-series, 3: original time-series.}
 #' 
 #' \item{has_lc}{Boolean, Whether use land cover data?}
 #' \item{file_lc}{Character, the file path of land cover.}
@@ -156,10 +156,10 @@
 #' seasons (see further explanations in section 4.3). 
 #' For methods 3, 2 and 1, the threshold values for start and end respectively are specified on row 38.
 #' \describe{
-#'     \item{1}{STL trend}
-#'     \item{2}{relative amplitude}
-#'     \item{3}{absolute value}
-#'     \item{4}{seasonal amplitude}
+#'     \item{1}{seasonal amplitude}
+#'     \item{2}{absolute value}
+#'     \item{3}{relative amplitude}
+#'     \item{4}{STL trend}
 #' }}
 #' 
 #' \item{trs}{Season start/end values. For start / end methods 3 and 1 please supply
