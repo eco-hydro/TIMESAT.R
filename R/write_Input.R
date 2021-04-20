@@ -10,6 +10,8 @@
 #' @importFrom data.table fwrite
 #' @export
 #'
+#' @note not allow NA values in x
+#' 
 #' @examples
 #' library(rTIMESAT)
 #' data("MOD13A1")
@@ -20,12 +22,13 @@
 #' nptperyear <- 23
 #'
 #' file_y <- sprintf("TSM_%s_y.txt", sitename)
-#' file_w <- sprintf("TSM_%s_w.txt", sitename)
+#' file_qc <- sprintf("TSM_%s_w.txt", sitename)
 #'
 #' write_input(d$EVI/1e4 , file_y, nptperyear)
-#' write_input(d$SummaryQA, file_w, nptperyear)
-write_input <- function(x, file="TSM_y.txt", nptperyear=23){
+#' write_input(d$SummaryQA, file_qc, nptperyear)
+write_input <- function(x, file="TSM_y.txt", nptperyear=23, missing = -0.1){
     if (!is.matrix(x)) x <- matrix(x, nrow=1)
+    x[is.na(x)] <- missing
     dim  <- dim(x)
 
     ngrid <- dim[1] # how many points
@@ -34,10 +37,10 @@ write_input <- function(x, file="TSM_y.txt", nptperyear=23){
     nyear <- floor(npt/nptperyear)
     npt  <- nptperyear*nyear
 
-    header <- sprintf("%d\t%d\t%d", nyear, nptperyear, ngrid)
+    header <- sprintf("%d %d %d", nyear, nptperyear, ngrid)
 
     write_lines(header, file)
     # write.table(x[, 1:npt, drop=F], file, append = T, row.names = F, col.names = F, sep = "\t")
     suppressMessages(fwrite(x[, 1:npt, drop = F], file, append = T, 
-        row.names = F, col.names = F, sep = "\t"))
+        row.names = F, col.names = F, sep = " "))
 }

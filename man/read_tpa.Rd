@@ -4,7 +4,7 @@
 \alias{read_tpa}
 \title{read_tpa}
 \usage{
-read_tpa(file)
+read_tpa(file, t = NULL)
 }
 \arguments{
 \item{file}{A string giving the location of a .tpa file output by
@@ -12,12 +12,12 @@ TIMESAT}
 }
 \value{
 A data.frame containing 14 columns: \code{
-"row", "col", "season", "time_start", "time_end", "len", 
-"val_base", "time_peak", "val_peak", "ampl", "der_l", "der_r", 
+"row", "col", "season", "time_start", "time_end", "len",
+"val_base", "time_peak", "val_peak", "ampl", "der_l", "der_r",
 "integ_large", "integ_small", "val_start", "val_end"}.
 }
 \description{
-Read seasonality phenological metrics in TIMESAT .tpa binary 
+Read seasonality phenological metrics in TIMESAT .tpa binary
 format file to dataframe.
 }
 \examples{

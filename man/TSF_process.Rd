@@ -4,14 +4,14 @@
 \alias{TSF_process}
 \title{TSF_process}
 \usage{
-TSF_process(file_set, ncluster = 1, wait = TRUE)
+TSF_process(file_set, ncluster = 1, wait = TRUE, cache = TRUE)
 }
 \arguments{
 \item{file_set}{file path of TIMESAT setting file.}
 
 \item{ncluster}{How many clusters to be used in parallel mode?}
 
-\item{wait}{A logical (not NA) indicating whether the R interpreter should 
+\item{wait}{A logical (not NA) indicating whether the R interpreter should
 wait for the command to finish, or run it asynchronously.}
 }
 \description{
@@ -19,7 +19,7 @@ TSF_process
 }
 \examples{
 \dontrun{
-file_set <- system.file("example/ascii/TSM.set", package = "rTIMESAT") 
+file_set <- system.file("example/ascii/TSM.set", package = "rTIMESAT")
 TSF_process(file_set)
 }
 }

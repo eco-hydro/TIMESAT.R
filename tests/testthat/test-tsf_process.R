@@ -4,7 +4,7 @@ context("test-tsf_process")
 test_that("write_input works", {
     expect_silent({
       write_input(d$EVI/1e4 , file_y, nptperyear)
-      write_input(d$SummaryQA, file_w, nptperyear)
+      write_input(d$SummaryQA, file_qc, nptperyear)
     })
 })
 

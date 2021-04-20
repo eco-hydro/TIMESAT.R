@@ -4,7 +4,7 @@
 \alias{write_input}
 \title{write_input}
 \usage{
-write_input(x, file = "TSM_y.txt", nptperyear = 23)
+write_input(x, file = "TSM_y.txt", nptperyear = 23, missing = -0.1)
 }
 \arguments{
 \item{x}{matrix row is site, column is time.}
@@ -16,6 +16,9 @@ write_input(x, file = "TSM_y.txt", nptperyear = 23)
 \description{
 Write matrix into the format of TIMESAT.
 }
+\note{
+not allow NA values in x
+}
 \examples{
 library(rTIMESAT)
 data("MOD13A1")
@@ -26,8 +29,8 @@ d <- subset(df, site == sitename)
 nptperyear <- 23
 
 file_y <- sprintf("TSM_\%s_y.txt", sitename)
-file_w <- sprintf("TSM_\%s_w.txt", sitename)
+file_qc <- sprintf("TSM_\%s_w.txt", sitename)
 
 write_input(d$EVI/1e4 , file_y, nptperyear)
-write_input(d$SummaryQA, file_w, nptperyear)
+write_input(d$SummaryQA, file_qc, nptperyear)
 }

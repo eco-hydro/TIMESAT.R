@@ -20,7 +20,7 @@
 #' on the first row gives the totalnumber N of vegetation index images and 
 #' then the path and name of each of the N images.}
 #' 
-#' \item{file_w}{Relevant if quality data are used (specifications on rows 14–16). 
+#' \item{file_qc}{Relevant if quality data are used (specifications on rows 14–16). 
 #' Running in image mode the user should prepare a file that on the first row 
 #' gives the total number N of quality images and then the paths and names of 
 #' the quality images. The file has the same structure as the file listing 
@@ -178,8 +178,8 @@
 #' opt <- rTIMESAT:::options_TSM
 #' write_setting(opt, 'TSM.set')
 write_setting <- function(options, file = "TSM.set"){
-    # check about file_w    
-    if(options$file_w == "") options$has_QC <- 0
+    # check about file_qc    
+    if(options$file_qc == "") options$has_QC <- 0
     
     # convert numeric into string
     opt <- options %>% map_chr(paste, collapse = " ")

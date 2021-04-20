@@ -5,7 +5,7 @@ options_TSM <- list(
     is_trend            = 0,              # 1 = STL trend fitting activated. Overrules choice of fitting method (row 32).
     has_QC              = 1,              # 1 = use quality data, 0 = do not use quality data
     file_y              = "",             # Data file list/name 
-    file_w              = "",             # Mask file list/name 
+    file_qc              = "",             # Mask file list/name 
     image_type          = 1,              # Image file type 
     byte_order          = 0,              # Byte order (1/0) 
     image_dim           = c(1, 1),        # Image dimension (nrow ncol) 
@@ -32,12 +32,13 @@ options_TSM <- list(
     force_min           = c(0, -9999),    # Force minimum (1/0) and value 
     FUN                 = 2,              # Fitting method (1/2/3): (SG/AG/DL)
     wFUN                = 1,              # Reserved, Weight update method 
-    half_win           = 7,              # Window size for SG. 
+    half_win            = 7,              # Window size for SG. 
     par_1               = 0,              # Reserved 
     par_2               = 0,              # Reserved 
     meth_pheno          = 1,              # Season start / end method (4/3/2/1) 
     trs                 = c(0.5, 0.5)     # Season start / end values 
 )
+
 # {Separator. This row contains a separator. On the rows following the separator
 # parameters are given that are specific to each land cover class. If no land
 # cover map is used all time-series will be treated as belonging to the first

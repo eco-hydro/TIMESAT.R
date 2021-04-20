@@ -2,3 +2,14 @@
 .Rhistory
 .RData
 .Ruserdata
+
+inst/examples
+
+*.txt
+*.tts
+*.ndx
+*.tpa
+*.set
+
+# Figures
+*.pdf

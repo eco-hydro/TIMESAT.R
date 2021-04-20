@@ -9,13 +9,13 @@ nptperyear <- 23
 nyear <- floor(nrow(d)/nptperyear)
 
 file_y <- sprintf("TSM_%s_y.txt", sitename)
-file_w <- sprintf("TSM_%s_w.txt", sitename)
+file_qc <- sprintf("TSM_%s_w.txt", sitename)
 file_set <- sprintf("TSM_%s.set", sitename)
 
 ## 2. Update options
 options <- list(
    file_y              = file_y,             # Data file list/name
-   file_w              = file_w,             # Mask file list/name
+   file_qc              = file_qc,             # Mask file list/name
    nyear_and_nptperear = c(nyear, nptperyear),      # No. years and no. points per year
    ylu                 = c(0, 9999),     # Valid data range (lower upper)
    qc_1                = c(0, 0, 1),     # Quality range 1 and weight

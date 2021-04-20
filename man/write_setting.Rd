@@ -29,7 +29,7 @@ The global paremteres are as follows:
 on the first row gives the totalnumber N of vegetation index images and 
 then the path and name of each of the N images.}
 
-\item{file_w}{Relevant if quality data are used (specifications on rows 14–16). 
+\item{file_qc}{Relevant if quality data are used (specifications on rows 14–16). 
 Running in image mode the user should prepare a file that on the first row 
 gives the total number N of quality images and then the paths and names of 
 the quality images. The file has the same structure as the file listing 

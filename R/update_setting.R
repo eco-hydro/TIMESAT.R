@@ -7,7 +7,7 @@
 #' @examples
 #' options <- list(
 #'    file_y              = "",             # Data file list/name
-#'    file_w              = "",             # Mask file list/name
+#'    file_qc              = "",             # Mask file list/name
 #'    nyear_and_nptperear = c(17, 23),      # No. years and no. points per year
 #'    ylu                 = c(0, 9999),     # Valid data range (lower upper)
 #'    qc_1                = c(0, 0, 1),     # Quality range 1 and weight

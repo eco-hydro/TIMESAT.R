@@ -4,8 +4,16 @@
 \alias{TSF_fit2time}
 \title{TSF_fit2time}
 \usage{
-TSF_fit2time(infile, row_start = 1, row_end = Inf, col_start = 1,
-  col_end = 1, outdir, outfile, wait = TRUE)
+TSF_fit2time(
+  infile,
+  row_start = 1,
+  row_end = Inf,
+  col_start = 1,
+  col_end = 1,
+  outdir,
+  outfile,
+  wait = TRUE
+)
 }
 \arguments{
 \item{infile}{file path of curve fitting file.}
