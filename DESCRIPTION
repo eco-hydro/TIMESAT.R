@@ -17,7 +17,8 @@ Imports:
     purrr, readr,
     magrittr,
     data.table, 
-    dplyr,
+    dplyr, ggplot2, 
+    lubridate, 
     grDevices, utils, stats
 Suggests: knitr,
     rmarkdown,

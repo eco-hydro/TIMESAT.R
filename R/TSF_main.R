@@ -53,7 +53,7 @@ TSF_main <- function(y, qc, nptperyear = 23,
 
 # note: only suit for ascii
 tidy_tts <- function(d_tts){
-    sites <- d_tts$row %>% paste0("v", .)
+    sites <- d_tts$row %>% paste0("z", .)
     npt   <- ncol(d_tts) - 2
     d <- d_tts %>% {.[, 3:ncol(.)]} %>% as.matrix() %>% t() %>% data.frame() %>%
         set_colnames(sites) %>% cbind(t = 1:npt, .)
