@@ -1,0 +1,38 @@
+Settings file version: 3.3
+TSM        % Job_name (no blanks) 
+0				% Image /series mode (1/0) 
+0				% 1 = STL trend fitting activated. 0 = overrules choice of fitting method (FUN).
+0				% 1 = use quality data, 0 = do not use quality data
+        % Data file list/name 
+        % Mask file list/name 
+1				% Image file type 
+0				% Byte order (1/0) 
+1 1				% Image dimension (nrow ncol) 
+1 1 1 1			% Processing window (start row end row start col end col) 
+17 23			% No. years and no. points per year 
+0 9999			% Valid data range (lower upper) 
+0 0 1			% Quality range 1 and weight 
+1 1 0.5			% Quality range 2 and weight 
+2 3 0.2			% Quality range 3 and weight 
+0.1				% Amplitude cutoff value 
+0				% Debug flag (3/2/1/0) 
+1 1 0			% Output files (1/0 1/0 1/0) 
+0				% Use land cover (1/0) 
+        % Name of landcover file 
+1				% Spike method (3/2/1/0) 
+2				% Spike value 
+3				% STL stiffness value (1-10) 
+1				% No. of landcover classes 
+************
+1				% Land cover code for class 1 
+1				% Seasonality parameter (0-1) 
+2				% No. of envelope iterations (3/2/1) 
+2				% Adaptation strength (1-10) 
+0 -9999			% Force minimum (1/0) and value 
+2				% Fitting method (1/2/3): (SG/AG/DL)
+1				% Weight update method 
+7				% Window size for Sav-Gol. 
+0				% Reserved 
+0				% Reserved 
+1				% Season start / end method (4/3/2/1) 
+0.5 0.5			% Season start / end values 
