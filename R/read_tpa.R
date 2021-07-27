@@ -80,7 +80,7 @@ read_tpa <- function(file, t = NULL) {
         return(data)
     })
     df <- do.call(rbind.data.frame, lst) %>% set_colnames(Colnames)
-    df <- df[, Colnames_adj]
+    df <- df[, Colnames_adj] %>% data.table()
     df %<>% dplyr::mutate(across(time_start:time_peak, ~num2date(.x, t)))
     return(df)
 }

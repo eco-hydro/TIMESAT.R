@@ -181,6 +181,9 @@ write_setting <- function(options, file = "TSM.set"){
     # check about file_qc    
     if(options$file_qc == "") options$has_QC <- 0
     
+    options$file_y  %<>% normalizePath() # "/"
+    options$file_qc %<>% normalizePath()
+    
     # convert numeric into string
     opt <- options %>% map_chr(paste, collapse = " ")
 

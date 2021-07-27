@@ -4,7 +4,7 @@
 \alias{TSF_process}
 \title{TSF_process}
 \usage{
-TSF_process(file_set, ncluster = 1, wait = TRUE, cache = TRUE)
+TSF_process(file_set, ncluster = 1, wait = TRUE, cache = TRUE, verbose = FALSE)
 }
 \arguments{
 \item{file_set}{file path of TIMESAT setting file.}

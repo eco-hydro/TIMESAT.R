@@ -9,7 +9,12 @@ TIMESAT_process(
   nptperyear = 365,
   p_trs = 0.1,
   half_win = NULL,
-  cache = FALSE
+  cache = FALSE,
+  methods = c("SG", "AG", "DL"),
+  missval = -0.1,
+  wmin = 0.1,
+  seasonpar = 0.2,
+  iters = 2
 )
 }
 \arguments{
